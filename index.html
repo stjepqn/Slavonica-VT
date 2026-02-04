@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slavonica</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff3e6;
+            color: #4b2e2e;
+        }
+
+        header {
+            background-color: #e67e22;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header img {
+            width: 120px;
+            display: block;
+            margin: 0 auto 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #8b4513;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd699;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            color: #e67e22;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffd699;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-details {
+            display: none;
+            margin-top: 15px;
+            background-color: #fff1d6;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: left;
+            font-size: 0.95em;
+            line-height: 1.4em;
+        }
+
+        .details-btn {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .details-btn:hover {
+            background-color: #cf6f1e;
+        }
+
+        footer {
+            background-color: #8b4513;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://i.ibb.co/4njxYTfc/Slavonica-VT-LOGO.png" alt="Slavonica Logo">
+    <h1>Slavonica</h1>
+    <p>Slavonica – Tradicija u modernom obliku.</p>
+</header>
+
+<nav>
+    <a href="#o-nama">O nama</a>
+    <a href="#Proizvodi">Proizvodi</a>
+    <a href="#kontakt">Kontakt</a>
+</nav>
+
+<main>
+    <section id="o-nama">
+        <h2>O nama</h2>
+        <p>Slavonica se nalazi u srcu Slavonije, u Đakovu, i spaja tradiciju, kvalitetu i zdrav način života. Naša misija je promicati slavonsku baštinu u Hrvatskoj i inozemstvu, nudeći autentične, visokokvalitetne proizvode zdrave prehrane i tradicionalne slavonske suvenire. Posebno naglašavamo lokalnu tradiciju, prirodne sastojke i odgovorno poslovanje, razvijajući ljubav prema Slavoniji i potičući održivost.</p>
+    </section>
+
+    <section id="Proizvodi">
+        <h2>Proizvodi</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Sušene jabuke domaće</h3>
+                <a href="https://ibb.co/Lz2zrZ7X" target="_blank">
+                    <img src="https://i.ibb.co/svMvCVYd/image2.png" alt="Sušene jabuke">
+                </a>
+                <button class="details-btn" onclick="showDetails('jabuke')">VIŠE O PROIZVODU</button>
+                <div id="jabuke" class="product-details">
+Šifra 660-001<br>
+Sastojci: jabuke (100%)<br>
+Neto količina: 1 kg<br>
+Način proizvodnje: sušenje<br>
+Uvjeti čuvanja: čuvati na suhom i tamnom mjestu<br>
+Rok trajanja: otisnut na pakiranju<br>
+Zemlja podrijetla: Hrvatska (Slavonija)<br>
+Proizvođač / Distributer: Slavonica d.o.o., vježbenička tvrtka
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Sušene kruške domaće</h3>
+                <a href="https://ibb.co/S4vHnBVp" target="_blank">
+                    <img src="https://i.ibb.co/39hVNcSH/image4.png" alt="Sušene kruške">
+                </a>
+                <button class="details-btn" onclick="showDetails('kruske')">VIŠE O PROIZVODU</button>
+                <div id="kruske" class="product-details">
+Šifra 660-002<br>
+Naziv proizvoda: Sušene kruške domaće<br>
+Sastojci: kruške (100%)<br>
+Neto količina: 1 kg<br>
+Način proizvodnje: sušenje<br>
+Uvjeti čuvanja: čuvati na suhom i hladnom mjestu<br>
+Rok trajanja: otisnut na pakiranju<br>
+Zemlja podrijetla: Hrvatska (Slavonija)<br>
+Distributer: Slavonica d.o.o., vježbenička tvrtka
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Sušene šljive bez koštice</h3>
+                <a href="https://ibb.co/KzwXBG51" target="_blank">
+                    <img src="https://i.ibb.co/dJgrXcfh/image3.png" alt="Sušene šljive">
+                </a>
+                <button class="details-btn" onclick="showDetails('sljive')">VIŠE O PROIZVODU</button>
+                <div id="sljive" class="product-details">
+Šifra 660-003<br>
+Naziv proizvoda: Sušene šljive bez koštice<br>
+Sastojci: šljive (100%)<br>
+Neto količina: 1 kg<br>
+Način proizvodnje: sušenje<br>
+Uvjeti čuvanja: čuvati na suhom mjestu<br>
+Rok trajanja: otisnut na pakiranju<br>
+Zemlja podrijetla: Hrvatska (Slavonija)<br>
+Distributer: Slavonica d.o.o., vježbenička tvrtka
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <div class="contact-info">
+            <p>Adresa: Ul. Vijenac kardinala Alojzija Stepinca 11, 31400, Đakovo</p>
+            <p>Email: slavonica.vt@gmail.com</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    &copy; 2026 Slavonica. Sva prava pridržana.
+</footer>
+
+<script>
+function showDetails(id) {
+    // Sakrij sve detalje
+    const details = document.querySelectorAll('.product-details');
+    details.forEach(d => {
+        if (d.id !== id) {
+            d.style.display = 'none';
+        }
+    });
+
+    // Toggle samo odabrani detalj
+    const elem = document.getElementById(id);
+    if (elem.style.display === 'block') {
+        elem.style.display = 'none';
+    } else {
+        elem.style.display = 'block';
+    }
+}
+</script>
+
+</body>
+</html>

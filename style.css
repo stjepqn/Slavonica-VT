@@ -1,14 +1,16 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f5efe6;
+  background: url("images/pozadina.png");
+  background-size: cover;
+  background-attachment: fixed;
   color: #5a3e2b;
 }
 
 .header {
   text-align: center;
   padding: 40px 20px;
-  background: #f2e6d8;
+  background: rgba(242, 230, 216, 0.9);
   animation: fadeIn 1.5s ease;
 }
 
@@ -30,7 +32,7 @@ body {
 }
 
 .product-card {
-  background: #fff;
+  background: rgba(255,255,255,0.95);
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 30px;
@@ -45,9 +47,12 @@ body {
 }
 
 .product-card img {
-  width: 100%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px auto;
   border-radius: 15px;
-  margin-bottom: 15px;
 }
 
 details {
